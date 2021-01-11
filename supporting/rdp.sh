@@ -6,10 +6,11 @@ source $HOME/.rdp-defaults
 
 # Configure Fluxbox
 mkdir $HOME/.fluxbox
-echo "session.screen0.toolbar.tools:  iconbar, systemtray" > $HOME/.fluxbox/init
+echo "session.screen0.toolbar.visible: false" > $HOME/.fluxbox/init
+#echo "session.screen0.toolbar.tools:  iconbar, systemtray" > $HOME/.fluxbox/init
 echo "background: none" > $HOME/.fluxbox/overlay
 
-# Launch MATLAB
+# Launch Texmaker
 cd $DOMINO_WORKING_DIR
 fluxbox &
-xterm -e texmaker
+texmaker
