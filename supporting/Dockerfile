@@ -14,7 +14,6 @@ RUN sudo apt install -y fluxbox
 # Pull required code
 RUN mkdir /tmp/gittex && \
     cd /tmp/gittex && \
-    touch test11 && \
     git clone https://github.com/vaibhav-dhawan/jupyterlab_proxy_texmaker.git
     
 RUN sudo mkdir /etc/guacamole/ && \
