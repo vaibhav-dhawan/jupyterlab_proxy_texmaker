@@ -2,7 +2,7 @@
     <authorize
          username="domino"
          password="domino">
-         
+
        <connection name="default">
          <protocol>rdp</protocol>
          <param name="hostname">localhost</param>
@@ -10,7 +10,7 @@
          <param name="password">domino</param>
          <param name="disable-auth">true</param>
          <param name="initial-program">/var/opt/workspaces/texmaker/rdp.sh</param>
-         <param name="resize-method">reconnect</param>
+         <param name="resize-method">display-update</param>
        </connection>
     </authorize>
 
