@@ -1,4 +1,8 @@
 <user-mapping>
+    <authorize
+         username="domino"
+         password="domino">
+         
        <connection name="default">
          <protocol>rdp</protocol>
          <param name="hostname">localhost</param>
