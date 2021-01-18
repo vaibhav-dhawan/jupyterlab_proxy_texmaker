@@ -1,0 +1,9 @@
+texmaker:
+  title: "Texmaker"
+  iconUrl: "https://www.xm1math.net/texmaker/assets/img/texmaker256x256.png"
+  start: [ "/var/opt/workspaces/texmaker/start.sh" ]
+  httpProxy:
+    port: 8080
+    internalPath: "/{{ownerUsername}}/{{projectName}}/{{sessionPathComponent}}/{{runId}}/#/?username=domino&password=domino"
+    rewrite: false
+    requireSubdomain: false
