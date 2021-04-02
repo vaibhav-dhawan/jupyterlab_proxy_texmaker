@@ -3,7 +3,7 @@ USER root
 RUN wget -q -O /tmp/mrutter.asc "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xe298a3a825c0d65dfd57cbb651716619e084dab9" && \
     sudo apt-key add /tmp/mrutter.asc && \
     sudo apt-get update && \
-    sudo apt-get install texmaker -y
+    sudo DEBIAN_FRONTEND=noninteractive apt-get install texmaker -y
 
 RUN sudo DEBIAN_FRONTEND=noninteractive apt install -y vnc4server expect openbox tightvncserver tigervnc-standalone-server tigervnc-xorg-extension tigervnc-viewer xrdp
 RUN sudo apt install -y build-essential libcairo2-dev libjpeg-turbo8-dev libpng-dev libtool-bin libossp-uuid-dev libvncserver-dev freerdp2-dev libssh2-1-dev libtelnet-dev libwebsockets-dev libpulse-dev libvorbis-dev libwebp-dev libssl-dev libpango1.0-dev libswscale-dev libavcodec-dev libavutil-dev libavformat-dev
