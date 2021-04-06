@@ -31,5 +31,6 @@ RUN sudo mkdir /etc/guacamole/ && \
 #    cp /tmp/gittex/jupyterlab_proxy_texmaker/supporting/guacamole-auth-noauth-1.2.0.jar /etc/guacamole/extensions && \
 #    sudo mkdir -p /etc/guacamole/lib  && \
 #    cp /tmp/gittex/jupyterlab_proxy_texmaker/supporting/guacamole-auth-noauth-1.2.0.jar /etc/guacamole/lib    
-    
+
+RUN sudo DEBIAN_FRONTEND=noninteractive apt-get install -y texlive-xetex texlive-fonts-recommended texlive-generic-recommended
 RUN cd /tmp/gittex/jupyterlab_proxy_texmaker && pip install .
